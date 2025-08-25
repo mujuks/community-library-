@@ -1,0 +1,37 @@
+/*Global styles*/
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Arial',sans-serif;
+line-height: 1.6;
+background-color: gold;
+color: aqua;
+margin: 0;
+padding: 0;
+
+}
+
+header{
+    background-color: #29acdb; /* Light blue header */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 5.5em;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: auto;
+}

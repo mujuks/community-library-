@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">r
+    <title>RYSA Community Center</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/logo.JPG" alt="RYSA Logo"> </div> 
+                <div class="P-container">
+                    <p> RUNDA YOUTH SPORT ASSOCIATION </p>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="welcome-section">
+        <h1>Welcome to Runda Youth Sports Association (RYSA)  Community Center</h1>
+        <p>Empowering our community through education, sports, and service.</p>
+       
+        <button class="btn" >Join Us Today</button>
+    </section>
+
+    <!-- About Section with Image Placement -->
+    <section class="about">
+        <div class="about-content">
+            <h2>About RYSA Community Center</h2>
+            <p>Our mission is to create a positive environment through community services, educational programs, and engaging sports activities. We strive to build a stronger, united community through meaningful interactions and activities.</p>
+        </div>
+        <div class="about-image">
+            <img src="image/rsi.jpg" alt="Community Center Image">
+        </div>
+    </section>
+
+    <!-- Services Summary with Images -->
+    <section class="summary">
+        <h2>Discover Our Services</h2>
+        <div class="services-gallery">
+            <div class="service-card">
+                <img src="image/std.png" alt="Education Program">
+                <h3>Education Programs</h3>
+                <p>Empowering individuals through educational workshops and classes.</p>
+            </div>
+            <div class="service-card">
+                <img src="image/football.jpeg" alt="Sports Activities">
+                <h3>Sports Activities</h3>
+                <p>Promoting health and wellness through various sports initiatives.</p>
+            </div>
+            <div class="service-card">
+                <img src="image/community service.jpg" alt="Community Outreach">
+                <h3>Community Outreach</h3>
+                <p>Fostering community engagement and service projects.</p>
+            </div>
+        </div>
+        <a href="services.html" class="btn">View All Services</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 RYSA Community Center. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const forms = document.querySelectorAll('form');
+            
+            forms.forEach(form => {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Form submitted successfully!');
+                });
+            });
+        });
+    </script>        
+</body>
+</html>

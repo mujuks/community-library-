@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+$nameError = "";
+$passwordError = "";
+if(isset($_POST['submit']))
+{
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    if(empty($username))
+    {
+        $nameError = "Username is required";
+    }
+    if(empty($password))
+    {
+        $passwordError = "Password is required";
+    }
+}
+?>
+<html>
+    <body>
+        <h3> Login Form Validation in PHP </h3>
+        <form method="post">
+            <p>
+                <label for="name">Username</label>
+                <input type="text" name="username" placeholder="Entter name">
+                <span style="color:red;"><?php echo $nameError;?></span>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter password">
+                <span style="color:red;"><?php echo $passwordError;?></span>
+            </p>
+            <button name="submit" name="submit">Login</button>
+        </form>
+    </body>
+</html>
+</body>
+</html>
